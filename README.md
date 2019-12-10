@@ -1,7 +1,6 @@
 # COVESTRO Hackathon 
 
-This Hackathon was held in September 2019 and this analysis is carried out for Rhine Water Level Predictions. This prediction would help
-COVESTRO to: 
+This Hackathon was held in September 2019 and this analysis is carried out for Rhine Water Level Predictions. This prediction would help COVESTRO to: 
 - Avoid shortage of raw materials.
 -	Efficient distribution of finished goods, reducing inventory buildup and customer dissatisfaction.
 -	Effective use of water in the production process. 
@@ -33,4 +32,11 @@ TheilSenRegressor, and Linear regression models for predicting the water level.
 
 **4. NN_model**
 
-For improving the model, a machine learning algorithm was implemented.
+For improving the model, an LSTM was implemented.
+![Neural Network flowchart](https://github.com/kmair/COVESTRO-HACK/blob/master/Poster/Images/NN%20structure.PNG)
+
+## Future Work
+
+The predictions can be greatly improved if the feature forecasting method is improved from the ARIMA model used presently. Since this is a time-series prediction, there is high uncertainty. At present, only continuous features were forecasted for modeling, however, improved weather conditions may improve the results.
+
+**Note:** Testing the model on the train data which had correct feature values gave an R^2 of 0.96. Thus, instead of using the ARIMA model, if the weather data can be obtained from more accurate sources, the model predictions would significantly improve.
